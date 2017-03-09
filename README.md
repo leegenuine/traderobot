@@ -1,0 +1,2 @@
+# traderobot
+trade robot project
