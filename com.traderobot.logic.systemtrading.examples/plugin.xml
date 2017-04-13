@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.traderobot.platform.systemTradingLogics">
+      <systemTradingLogic
+            class="com.traderobot.logic.systemtrading.examples.SongLogic2"
+            developerName="송영래"
+            id="com.traderobot.logic.systemtrading.examples.songlogic1"
+            name="송영래2번로직"
+            version="1.0.0">
+      </systemTradingLogic>
+   </extension>
+
+</plugin>

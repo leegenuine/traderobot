@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.traderobot.ui.workbench"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="appName"
+               value="com.traderobot.ui.workbench">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="com.traderobot.ui.workbench.definition.delete.systemtradinglogic">
+         <with
+               variable="systemtradinglogic_at_mouse_click">
+            <instanceof
+                  value="com.traderobot.platform.logic.systemtrading.SystemTradingLogicDescriptor">
+            </instanceof>
+         </with>
+      </definition>
+   </extension>
+
+</plugin>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.traderobot.platform.feedPoints">
+      <feedPoint
+            description="코스피 프로그램매매 일별 차익거래잔고, 프로그램매매 호가, 사전공시 등"
+            groupIp="233.37.54.115"            
+            groupPort="19528"
+            id="com.traderobot.platform.feedpoint.program.information"
+            name="PROGRAM.INFORMATION">
+      </feedPoint>
+      <feedPoint
+            description="코스피종목배치, ELW종목배치, ETN종목배치, 코스피현재등락 등"
+            groupIp="233.37.54.115"            
+            groupPort="19524"
+            id="com.traderobot.platform.feedpoint.kospi.master"
+            name="KOSPI.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="KRX100, KOSPI, KOSPI200, KOSPI100, KOSPI50, KODI, 섹터 지수 등"
+            groupIp="233.37.54.115"
+            groupPort="19523"
+            id="com.traderobot.platform.feedpoint.kospi.index"
+            name="KOSPI.INDEX">
+      </feedPoint>
+      <feedPoint
+            description="ELW체결"
+            groupIp="233.37.54.141"
+            groupPort="19616"
+            id="com.traderobot.platform.feedpoint.elw.trade1"
+            name="ELW.TRADE1">
+      </feedPoint>
+      <feedPoint
+            description="ELW체결2"
+            groupIp="233.37.54.141"
+            groupPort="19617"
+            id="com.traderobot.platform.feedpoint.elw.trade2"
+            name="ELW.TRADE2">
+      </feedPoint>
+      <feedPoint
+            description="ELW체결3"
+            groupIp="233.37.54.141"
+            groupPort="19618"
+            id="com.traderobot.platform.feedpoint.elw.trade3"
+            name="ELW.TRADE3">
+      </feedPoint>
+      <feedPoint
+            description="ELW체결4"
+            groupIp="233.37.54.141"
+            groupPort="19619"
+            id="com.traderobot.platform.feedpoint.elw.trade4"
+            name="ELW.TRADE4">
+      </feedPoint>
+      <feedPoint
+            description="ELW체결5"
+            groupIp="233.37.54.141"
+            groupPort="19620"
+            id="com.traderobot.platform.feedpoint.elw.trade5"
+            name="ELW.TRADE5">
+      </feedPoint>
+      <feedPoint
+            description="ELW 거래원 등"
+            groupIp="233.37.54.143"
+            groupPort="19627"
+            id="com.traderobot.platform.feedpoint.elw.source"
+            name="ELW.SOURCE">
+      </feedPoint>
+      <feedPoint
+            description="ELW 투자지표 민감도 등"
+            groupIp="233.37.54.35"
+            groupPort="19628"
+            id="com.traderobot.platform.feedpoint.elw.greek"
+            name="ELW.GREEK">
+      </feedPoint>
+      <feedPoint
+            description="ELW 투자자별, ELW투자지표"
+            groupIp="233.37.54.144"
+            groupPort="19629"
+            id="com.traderobot.platform.feedpoint.elw.investor"
+            name="ELW.INVESTOR">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200선물 마스터"
+            groupIp="233.37.54.191"
+            groupPort="15571"
+            id="com.traderobot.platform.feedpoint.kospi200.future.master"
+            name="KOSPI200.FUTURE.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200콜 체결 및 호가"
+            groupIp="233.37.54.161"
+            groupPort="15515"
+            id="com.traderobot.platform.feedpoint.kospi200.call.trade"
+            name="KOSPI200.CALL.TRADE">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200풋 체결 및 호가 데이터"
+            groupIp="233.37.54.162"
+            groupPort="15516"
+            id="com.traderobot.platform.feedpoint.kospi200.put.trade"
+            name="KOSPI200.PUT.TRADE">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200옵션 마스터"
+            groupIp="233.37.54.195"
+            groupPort="15511"
+            id="com.traderobot.platform.feedpoint.kospi200.option.master"
+            name="KOSPI200.OPTION.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200 옵션 민감도"
+            groupIp="233.37.54.195"
+            groupPort="15510"
+            id="com.traderobot.platform.feedpoint.kospi200.option.greek"
+            name="KOSPI200.OPTION.GREEK">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200옵션 투자자 등"
+            groupIp="233.37.54.195"
+            groupPort="15513"
+            id="com.traderobot.platform.feedpoint.kospi200.option.investor"
+            name="KOSPI200.OPTION.INVESTOR">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200옵션 시세 리커버리"
+            groupIp="233.37.54.195"
+            groupPort="15514"
+            id="com.traderobot.platform.feedpoint.kospi200.option.recovery"
+            name="KOSPI200.OPTION.RECOVERY">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200옵션 미결제약정 수량"
+            groupIp="233.37.54.195"
+            groupPort="15518"
+            id="com.traderobot.platform.feedpoint.kospi200.option.openinterest"
+            name="KOSPI200.OPTION.OPEN_INTEREST">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200선물 투자자 동향"
+            groupIp="233.37.54.191"
+            groupPort="15573"
+            id="com.traderobot.platform.feedpoint.kospi200.future.investor"
+            name="KOSPI200.FUTURE.INVESTOR">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200선물 체결, 종목마감, 장운영TS, 호가, 체결호가, Polling, 장운영스케줄공개, 배분정보, 실시간 상하한가 적용 및 해제, 가격제한폭 확대발동"
+            groupIp="233.37.54.171"
+            groupPort="15572"
+            id="com.traderobot.platform.feedpoint.kospi200.future.trade"
+            name="KOSPI200.FUTURE.TRADE">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200선물 미결제약정수량 등"
+            groupIp="233.37.54.191"
+            groupPort="15577"
+            id="com.traderobot.platform.feedpoint.kospi200.future.openinterest"
+            name="KOSPI200.FUTURE.OPEN_INTEREST">
+      </feedPoint>
+      <feedPoint
+            description="KOSPI200선물 시세 RECOVERY"
+            groupIp="233.37.54.191"
+            groupPort="15574"
+            id="com.traderobot.platform.feedpoint.kospi200.future.recovery"
+            name="KOSPI200.FUTURE.RECOVERY">
+      </feedPoint>
+      <feedPoint
+            description="코스닥 종목배치, 코스닥 현재등락 등"
+            groupIp="233.37.54.155"
+            groupPort="19724"
+            id="com.traderobot.platform.feedpoint.kosdaq.master"
+            name="KOSDAQ.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="코스닥지수 등"
+            groupIp="233.37.54.155"
+            groupPort="19723"
+            id="com.traderobot.platform.feedpoint.kosdaq.index"
+            name="KOSDAQ.INDEX">
+      </feedPoint>      
+      <feedPoint
+            description="미니선물 종목정보"
+            groupIp="233.37.54.245"
+            groupPort="15351"
+            id="com.traderobot.platform.feedpoint.mini.future.master"
+            name="MINI.FUTURE.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="미니선물 체결 등"
+            groupIp="233.37.54.245"
+            groupPort="15352"
+            id="com.traderobot.platform.feedpoint.mini.future.trade"
+            name="MINI.FUTURE.TRADE">
+      </feedPoint>      
+      <feedPoint
+            description="미니선물 투자자동향, 미결제약정, 정산가격"
+            groupIp="233.37.54.245"
+            groupPort="15353"
+            id="com.traderobot.platform.feedpoint.mini.future.misc"
+            name="MINI.FUTURE.MISC">
+      </feedPoint>
+      <feedPoint
+            description="미니선물 시세RECOVERY 등"
+            groupIp="233.37.54.245"
+            groupPort="15354"
+            id="com.traderobot.platform.feedpoint.mini.future.recovery"
+            name="MINI.FUTURE.RECOVERY">
+      </feedPoint>      
+      <feedPoint
+            description="미니옵션 종목정보"
+            groupIp="233.37.54.246"
+            groupPort="15361"
+            id="com.traderobot.platform.feedpoint.mini.option.master"
+            name="MINI.OPTION.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="미니옵션 콜옵션 시세"
+            groupIp="233.37.54.246"
+            groupPort="15365"
+            id="com.traderobot.platform.feedpoint.mini.call.trade"
+            name="MINI.CALL.TRADE">
+      </feedPoint>      
+      <feedPoint
+            description="미니옵션 풋옵션 시세"
+            groupIp="233.37.54.247"
+            groupPort="15367"
+            id="com.traderobot.platform.feedpoint.mini.put.trade"
+            name="MINI.PUT.TRADE">
+      </feedPoint>      
+      <feedPoint
+            description="미니옵션 투자자동향, 미결제약정, 정산가격"
+            groupIp="233.37.54.246"
+            groupPort="15363"
+            id="com.traderobot.platform.feedpoint.mini.option.misc"
+            name="MINI.OPTION.MISC">
+      </feedPoint>
+      <feedPoint
+            description="미니옵션 시세RECOVERY 등"
+            groupIp="233.37.54.246"
+            groupPort="15364"
+            id="com.traderobot.platform.feedpoint.mini.option.recovery"
+            name="MINI.OPTION.RECOVERY">
+      </feedPoint>
+      <feedPoint
+            description="미니옵션 민감도, 내재변동성"
+            groupIp="233.37.54.246"
+            groupPort="15370"
+            id="com.traderobot.platform.feedpoint.mini.option.greek"
+            name="MINI.OPTION.GREEK">
+      </feedPoint>
+      
+      <feedPoint
+            description="상품선물 종목정보"
+            groupIp="233.37.54.194"
+            groupPort="15411"
+            id="com.traderobot.platform.feedpoint.commodity.future.master"
+            name="COMMODITY.FUTURE.MASTER">
+      </feedPoint>
+      <feedPoint
+            description="상품선물 체결, 우선호가, 체결우선호가, 종목마감, 장운영TS, 장운영스케줄공개, 배분정보, 실시간상하한가 적용및 해제"
+            groupIp="233.37.54.173"
+            groupPort="15412"
+            id="com.traderobot.platform.feedpoint.commodity.future.trade"
+            name="COMMODITY.FUTURE.TRADE">
+      </feedPoint>
+      
+      
+   </extension>
+
+</plugin>

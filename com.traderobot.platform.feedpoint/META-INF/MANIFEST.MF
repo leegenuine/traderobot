@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Feedpoint
+Bundle-SymbolicName: com.traderobot.platform.feedpoint;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TRADEROBOT
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.traderobot.platform;bundle-version="1.0.0"

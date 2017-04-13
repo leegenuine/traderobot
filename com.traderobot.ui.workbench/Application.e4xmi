@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.window.main" label="TradeRobot">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_6wlLkMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.ide.perspectivestack">
+      <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.perspective.backtest">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_VZ7McL2mEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.partsashcontainer.main" containerData="">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.partsashcontainer.top" containerData="80" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_moXk4Lt2Eeaq75dgYea2Ug" elementId="com.traderobot.ui.workbench.partsashcontainer.top.left" containerData="25">
+              <children xsi:type="basic:PartStack" xmi:id="_XgHW4Lt3Eeaq75dgYea2Ug" elementId="com.traderobot.ui.workbench.partstack.left_top" containerData="50">
+                <children xsi:type="basic:Part" xmi:id="_IbtnELLFEeaFlOcx_NsZMg" elementId="com.traderobot.ui.workbench.part.systemTrading" containerData="50" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.SystemTradingPart" label="로직 리스트" iconURI="platform:/plugin/com.traderobot.ui.workbench/icons/workingsets.png">
+                  <menus xsi:type="menu:PopupMenu" xmi:id="_8BpYcLLXEeaFlOcx_NsZMg" elementId="com.traderobot.ui.workbench.popupmenu.systemtradingView" label="시스템트레이딩">
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_yENrALtTEeaq75dgYea2Ug" elementId="com.traderobot.ui.workbench.directmenuitem.addSystemTradingLogic" label="로직추가..." contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddSystemTradingLogic"/>
+                    <children xsi:type="menu:DynamicMenuContribution" xmi:id="_CMxFILtjEeaq75dgYea2Ug" elementId="com.traderobot.ui.workbench.dynamicmenucontribution.systemtradingView" label="다이나믹" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SystemTradingLogicMenuContributor"/>
+                  </menus>
+                  <menus xmi:id="_p3b2wLwXEeaUL97XgsDTeA" elementId="com.traderobot.ui.workbench.menu.0">
+                    <tags>ViewMenu</tags>
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_s75GQLwXEeaUL97XgsDTeA" elementId="com.traderobot.ui.workbench.directmenuitem.addSystemTradingLogic" label="로직추가..." contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddSystemTradingLogic"/>
+                    <children xsi:type="menu:DynamicMenuContribution" xmi:id="_whcQoLwXEeaUL97XgsDTeA" elementId="com.traderobot.ui.workbench.dynamicmenucontribution.systemtradingView" label="다이나믹" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SystemTradingLogicMenuContributor"/>
+                  </menus>
+                </children>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_ZCrV0Lt3Eeaq75dgYea2Ug" elementId="com.traderobot.ui.workbench.partstack.left_bottom" containerData="50">
+                <children xsi:type="basic:Part" xmi:id="_pfMBALt2Eeaq75dgYea2Ug" elementId="com.traderobot.ui.workbench.part.systemtradinginputs" containerData="50" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.settings.InputPart" label="입력변수설정"/>
+                <children xsi:type="basic:Part" xmi:id="_NZP0ULwWEeaUL97XgsDTeA" elementId="com.traderobot.ui.workbench.part.systemtrading.settings" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.settings.SignalPart" label="시그널설정">
+                  <menus xmi:id="_WdEUoL0bEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.menu.signalsetting" label="신호연계주문설정">
+                    <tags>ViewMenu</tags>
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_g7dmIL0bEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.directmenuitem.signal.add" label="연결주문 추가" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddSignalOrderItemHandler"/>
+                    <children xsi:type="menu:DynamicMenuContribution" xmi:id="_dKE9wL2gEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.dynamicmenucontribution.signalorderitem" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SingalOrderItemMenuContributor"/>
+                  </menus>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Sz7kQLwqEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.partsashcontainer.top.right" containerData="75">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_GT5VsLwrEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.partsashcontainer.misc" containerData="50">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_QyhEsMZzEeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.backtest">
+                  <children xsi:type="basic:PartStack" xmi:id="__UtUkMZzEeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.0">
+                    <children xsi:type="basic:Part" xmi:id="_oWFlsLxMEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.part.backtest.backtestlauch" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.backtest.BacktestLaunchPart" label="백테스트 Launcher"/>
+                  </children>
+                  <children xsi:type="basic:PartStack" xmi:id="_ASekYMZ0EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.1">
+                    <children xsi:type="basic:Part" xmi:id="__lBQMMZtEeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.backtestsignal" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.backtest.BacktestSignalPart" label="백테스트 신호"/>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_LyxSsL2rEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.partstack.bottom" containerData="20">
+            <children xsi:type="basic:Part" xmi:id="_Z9dpEL2mEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.part.systemtradinglogicmessage" containerData="" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.SystemTradingLogicMessagePart" label="로직 메시지 로그"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_C4vNQMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.perspective.real">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_GEzgoMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.main" containerData="">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_GEzgocZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.top" containerData="80" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_GEzgosZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.top.left" containerData="25">
+              <children xsi:type="basic:PartStack" xmi:id="_GE0HsMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.left_top" containerData="50">
+                <children xsi:type="basic:Part" xmi:id="_GE0HscZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.systemTrading" containerData="50" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.SystemTradingPart" label="로직 리스트" iconURI="platform:/plugin/com.traderobot.ui.workbench/icons/workingsets.png">
+                  <menus xsi:type="menu:PopupMenu" xmi:id="_GE0HssZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.popupmenu.systemtradingView" label="시스템트레이딩">
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_GE0Hs8Z6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.directmenuitem.addSystemTradingLogic" label="로직추가..." contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddSystemTradingLogic"/>
+                    <children xsi:type="menu:DynamicMenuContribution" xmi:id="_GE0HtMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.dynamicmenucontribution.systemtradingView" label="다이나믹" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SystemTradingLogicMenuContributor"/>
+                  </menus>
+                  <menus xmi:id="_GE0HtcZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.menu.0">
+                    <tags>ViewMenu</tags>
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_GE0HtsZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.directmenuitem.addSystemTradingLogic" label="로직추가..." contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddSystemTradingLogic"/>
+                    <children xsi:type="menu:DynamicMenuContribution" xmi:id="_GE0Ht8Z6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.dynamicmenucontribution.systemtradingView" label="다이나믹" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SystemTradingLogicMenuContributor"/>
+                  </menus>
+                </children>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_GE0HuMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.left_bottom" containerData="50">
+                <children xsi:type="basic:Part" xmi:id="_GE0HucZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.systemtradinginputs" containerData="50" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.settings.InputPart" label="입력변수설정"/>
+                <children xsi:type="basic:Part" xmi:id="_GE0HusZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.systemtrading.settings" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.settings.SignalPart" label="시그널설정">
+                  <menus xmi:id="_GE0Hu8Z6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.menu.signalsetting" label="신호연계주문설정">
+                    <tags>ViewMenu</tags>
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_GE0HvMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.directmenuitem.signal.add" label="연결주문 추가" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddSignalOrderItemHandler"/>
+                    <children xsi:type="menu:DynamicMenuContribution" xmi:id="_GE0HvcZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.dynamicmenucontribution.signalorderitem" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SingalOrderItemMenuContributor"/>
+                  </menus>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_GE0HvsZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.top.right" containerData="75">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_GE0Hv8Z6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.misc" containerData="50">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_GE0HxcZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partsashcontainer.position">
+                  <children xsi:type="basic:PartStack" xmi:id="_GE0HxsZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.2">
+                    <children xsi:type="basic:Part" xmi:id="_GE0Hx8Z6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.book.booklist" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.book.BookListPart" label="포지션현황"/>
+                  </children>
+                  <children xsi:type="basic:PartStack" xmi:id="_GE0HyMZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.3">
+                    <children xsi:type="basic:Part" xmi:id="_GE0HycZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.order.allorderlist" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.order.AllOrderListPart" label="주문체결현황">
+                      <menus xmi:id="_WD2dANMMEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.menu.order" label="">
+                        <tags>ViewMenu</tags>
+                        <children xsi:type="menu:HandledMenuItem" xmi:id="_ZaYT8NMMEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.handledmenuitem.neworder" label="신규주문" command="_K2UNkNMMEeau1sg3Arvp7g"/>
+                      </menus>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_GE0HysZ6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.partstack.bottom" containerData="20">
+            <children xsi:type="basic:Part" xmi:id="_GE0Hy8Z6EeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.part.systemtradinglogicmessage" containerData="" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.parts.systemtrading.SystemTradingLogicMessagePart" label="로직 메시지 로그"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_-efkwMAREeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.menu.connect" label="접속">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_8WQFkMZWEeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.handledmenuitem.platformconfiguration" label="환경설정" command="_hN-QsMZWEeaCjLqxyQaDkg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_3yY_sL3NEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handledmenuitem.ordermanagersetting" label="주문관리자 설정" command="_-Di0sL3NEea8Iq7y-_RQGw"/>
+        <children xsi:type="menu:Menu" xmi:id="_E4cJYMASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.menu.connectmode" label="접속선택">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_I8X44MASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.handledmenuitem.selectIAS" label="IAS 접속" command="_l2Mj4MASEeaaD6twHQrSkA"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_5w9pMMASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.handledmenuitem.selectBacktest" label="백테스트 접속" command="_xdglQMASEeaaD6twHQrSkA"/>
+        </children>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_6fVkgMD2EeavcsVnAT8VGw" elementId="com.traderobot.ui.workbench.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_kDRg4Lz1Eea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handledmenuitem.loadmasterfile" label="종목정보 복구파일 읽기" command="_cfat4Lz1Eea8Iq7y-_RQGw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zvNUgMD2EeavcsVnAT8VGw" elementId="com.traderobot.ui.workbench.handledmenuitem.openFeedPointInformation" label="FeedPoint 정보" command="_V0U1IMD2EeavcsVnAT8VGw"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_hoiXYMyZEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.menuseparator.1"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handleditem.quit" label="종료" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_6wlLisgZEeSyMNYR5xypkQ" elementId="file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handleditem.file.open" label="Open" iconURI="platform:/plugin/com.traderobot.ui.workbench/icons/sample.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handleditem.save" label="Save" iconURI="platform:/plugin/com.traderobot.ui.workbench/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qZyjwL0FEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handledmenuitem.openclickorder" label="클릭주문" command="_gCHlUL0FEea8Iq7y-_RQGw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fT9O0L21Eea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handledmenuitem.connectordermanager" label="주문관리접속" command="_Y0jicL21Eea8Iq7y-_RQGw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_sE1FMMybEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.handledmenuitem.update" label="업데이트" command="_k0gSMMybEeau1sg3Arvp7g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_1TtWwL3NEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.menu.order" label="주문"/>
+    </mainMenu>
+    <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.trimbar.top"/>
+    <trimBars xmi:id="_18mkAMvJEeat8piUVj-Ztw" elementId="com.traderobot.ui.workbench.trimbar.0" side="Bottom">
+      <children xsi:type="menu:ToolControl" xmi:id="_46tT4MvJEeat8piUVj-Ztw" elementId="com.traderobot.ui.workbench.toolcontrol.0" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.tools.StatusBarControl"/>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handler.quitCommand" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handler.openCommand" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handler.saveCommand" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.handler.aboutCommand" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_K6bpoLz0Eea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handler.loadMaster" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.LoadMasterFileHandler" command="_cfat4Lz1Eea8Iq7y-_RQGw"/>
+  <handlers xmi:id="_W1lkUL0FEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handler.openclickorder" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.OpenClickOrder" command="_gCHlUL0FEea8Iq7y-_RQGw"/>
+  <handlers xmi:id="_9qRicL20Eea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handler.connectordermanager" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.ConnectOrderManagerHandler" command="_Y0jicL21Eea8Iq7y-_RQGw"/>
+  <handlers xmi:id="_7j3tQL3NEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.handler.ordermanagersetting" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.OpenOrderManagerSettingDialogHandler" command="_-Di0sL3NEea8Iq7y-_RQGw"/>
+  <handlers xmi:id="_WKONgMACEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.handler.addMarketMonitorItem" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.AddMarketMonitorItemHandler"/>
+  <handlers xmi:id="_JXw0YMASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.handler.selectIAS" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SelectIASHandler" command="_l2Mj4MASEeaaD6twHQrSkA"/>
+  <handlers xmi:id="_rlnk0MASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.handler.selectBacktest" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.SelectBacktestHandler" command="_xdglQMASEeaaD6twHQrSkA"/>
+  <handlers xmi:id="_aMnEAMD2EeavcsVnAT8VGw" elementId="com.traderobot.ui.workbench.handler.openFeedPointInformation" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.OpenFeedPointInformationHandler" command="_V0U1IMD2EeavcsVnAT8VGw"/>
+  <handlers xmi:id="_dnMXQMZWEeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.handler.openPlatformConfiguation" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.OpenPlatformConfigurationDialog" command="_hN-QsMZWEeaCjLqxyQaDkg"/>
+  <handlers xmi:id="_TZsdoMyaEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.handler.update" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.UpdateHandler" command="_k0gSMMybEeau1sg3Arvp7g"/>
+  <handlers xmi:id="_-dDx4NMLEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.handler.openIASOrder" contributionURI="bundleclass://com.traderobot.ui.workbench/com.traderobot.ui.workbench.handlers.OpenIASOrderDialogHandler" command="_K2UNkNMMEeau1sg3Arvp7g"/>
+  <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
+    <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLhcgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.keybinding.m1s" keySequence="M1+S" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="com.traderobot.ui.workbench.keybinding.m1a" keySequence="M1+A" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
+  <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_cfat4Lz1Eea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.command.loadmasterfile" commandName="loadMasterFileCommand"/>
+  <commands xmi:id="_gCHlUL0FEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.command.openclickorder" commandName="openClickOrderCommand"/>
+  <commands xmi:id="_Y0jicL21Eea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.command.connectordermanager" commandName="connectOrderManagerCommand"/>
+  <commands xmi:id="_-Di0sL3NEea8Iq7y-_RQGw" elementId="com.traderobot.ui.workbench.command.ordermanagersetting" commandName="openOrderManagerSetting"/>
+  <commands xmi:id="_l2Mj4MASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.command.selectIAS" commandName="selectIASCommand"/>
+  <commands xmi:id="_xdglQMASEeaaD6twHQrSkA" elementId="com.traderobot.ui.workbench.command.selectBacktest" commandName="selectBacktestCommand"/>
+  <commands xmi:id="_V0U1IMD2EeavcsVnAT8VGw" elementId="com.traderobot.ui.workbench.command.openFeedPointInformation" commandName="openFeedPointInformationCommand"/>
+  <commands xmi:id="_hN-QsMZWEeaCjLqxyQaDkg" elementId="com.traderobot.ui.workbench.command.openPlatformConfiguration" commandName="openPlatformConfigurationCommand" description="시스템 환경설정 다이얼로그를 연다."/>
+  <commands xmi:id="_k0gSMMybEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.command.updateCommand" commandName="updateCommand"/>
+  <commands xmi:id="_K2UNkNMMEeau1sg3Arvp7g" elementId="com.traderobot.ui.workbench.command.openIASOrder" commandName="openIASOrderCommand"/>
+  <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_6wlLdcgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="dataCollectors" name="DataCollectors" schema="schema/dataCollectors.exsd"/>
+   <extension-point id="historyObjects" name="HistoryObject" schema="schema/historyObjects.exsd"/>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.traderobot.ui.datawindow"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="appName"
+               value="com.traderobot.ui.datawindow">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="com.traderobot.ui.datawindow.dataCollectors">
+      <dataCollector
+            class="com.traderobot.ui.datawindow.feedhandlers.DefaultDataCollector"
+            description="시스템에서 선택한 모든 데이터를 저장한다."
+            name="Default">
+      </dataCollector>
+   </extension>
+   <extension
+         point="com.traderobot.ui.datawindow.historyObjects">
+      <historyObject
+            class="com.traderobot.ui.datawindow.history.index.IndexHistory"
+            description="날짜, 시가, 고가, 저가, 종가, 거래량, 거래대금"
+            name="인덱스데이터관리">
+      </historyObject>
+      <historyObject
+            class="com.traderobot.ui.datawindow.history.future.KOSPI200FutureHistory"
+            description="날짜, 시가, 고가, 저가, 종가, 거래량, 거래대금"
+            name="KOSPI200연결선물관리">
+      </historyObject>
+      <historyObject
+            class="com.traderobot.ui.datawindow.history.program.ProgramTradeTotalHistory"
+            description="날짜,차익매도수량,차익매수수량,비차익매도수량,비차익매수수량,차익매도금액,차익매수금액,비차익매도금액,비차익매수금액"
+            name="프로그램매매전체집계">
+      </historyObject>
+   </extension>
+
+</plugin>
